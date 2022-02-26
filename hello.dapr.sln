@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaprCounter", "DaprCounter\DaprCounter.csproj", "{052A8F10-DF95-4DB0-B78C-035DFD75B412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFrontend", "MyFrontend\MyFrontend.csproj", "{A0D55D0F-A333-4913-B30F-B62C216FF749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackend", "MyBackend\MyBackend.csproj", "{C1A2E0F5-710E-42A6-BE3B-4ED146DA49EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{945C046C-6607-4197-8A43-5694F209BF90}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{052A8F10-DF95-4DB0-B78C-035DFD75B412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052A8F10-DF95-4DB0-B78C-035DFD75B412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052A8F10-DF95-4DB0-B78C-035DFD75B412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052A8F10-DF95-4DB0-B78C-035DFD75B412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D55D0F-A333-4913-B30F-B62C216FF749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D55D0F-A333-4913-B30F-B62C216FF749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D55D0F-A333-4913-B30F-B62C216FF749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D55D0F-A333-4913-B30F-B62C216FF749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A2E0F5-710E-42A6-BE3B-4ED146DA49EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A2E0F5-710E-42A6-BE3B-4ED146DA49EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A2E0F5-710E-42A6-BE3B-4ED146DA49EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A2E0F5-710E-42A6-BE3B-4ED146DA49EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

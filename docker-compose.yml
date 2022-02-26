@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  myfrontend:
+    image: ${DOCKER_REGISTRY-}myfrontend
+    build:
+      context: ./MyFrontend
+    ports: ["8080:80"]
+  myfrontend-dapr:
+    image: "daprio/daprd:latest"
+    command: [ "./daprd", "-app-id", "MyFrontEnd", "-app-port", "80" ]
+    depends_on:
+      - myfrontend
+    network_mode: "service:myfrontend"
+    ports: ["9090:9090"]
+    
+  mybackend:
+    image: ${DOCKER_REGISTRY-}mybackend
+    build:
+      context: ./MyBackend
+    ports: ["8081:80"]
+  mybackend-dapr:
+    image: "daprio/daprd:latest"
+    command: [ "./daprd", "-app-id", "MyBackEnd", "-app-port", "80" ]
+    depends_on:
+      - mybackend
+    network_mode: "service:mybackend"
+    ports: [ "3500:3500" ]
